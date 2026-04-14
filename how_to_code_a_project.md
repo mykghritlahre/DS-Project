@@ -1,4 +1,4 @@
-# How to Code a Project Using First Principle Thinking 
+# How to Code a Project Using First Principle Thinking
 
 ## What is First Principle Thinking?
 
