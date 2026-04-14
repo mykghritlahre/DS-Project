@@ -1,4 +1,4 @@
-### Step 1: Create a Setup Script
+### Commit 1: Create a Setup Script
 
 #### (1) Setup Script
 Create a `setup.py` file , this file will define your package and its dependencies. this allows you to easily install your package and its dependencies using pip.
