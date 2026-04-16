@@ -29,10 +29,7 @@ def create_project_dir(project_name):
     "Dockerfile",
     "requirements.txt",
     "setup.py"
-
-
-
-]
+    ]
 
 
     for filepath in list_of_file:
