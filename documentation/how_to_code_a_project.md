@@ -4,7 +4,7 @@
 
 First principle thinking is a problem-solving approach that breaks down complex problems into their most fundamental truths and builds up from there, rather than reasoning by analogy or past experience.
 
-### Step -1: First things first
+### Step 1: First things first
 
 Always create a venv (virtual environment) for your project to manage dependencies and avoid conflicts between packages. You can create a virtual environment using the following command:
 
@@ -29,7 +29,7 @@ source [environment_name]/bin/activate
 
 Once activated, you can install packages using pip, and they will be contained within the virtual environment.
 
-### Step 0: Install Required Packages
+### Step 2: Install Required Packages
 
 ```bash
 pip install -r requirements.txt
@@ -38,41 +38,8 @@ pip install -r requirements.txt
 install any additional packages your project needs.
 
 ---------------------------
-### Step 1: Create a Setup Script
+### Commits
 
-Create a `setup.py` file , this file will define your package and its dependencies. this allows you to easily install your package and its dependencies using pip.
-
-**official documentation:** [Setup Tools](https://setuptools.pypa.io/en/latest/)
-
-```python
-from setuptools import setup, find_packages
-
-setup(
-    name="your_package_name",
-    version="0.1",
-    packages=find_packages(),
-    install_requires=[
-        "numpy",
-        "pandas",
-        "scikit-learn",
-        "matplotlib",
-        "seaborn"
-    ],
-)
-```
-
-Now this parameter `install_requires` is technically requirements.txt libraries that your package depends on. 
-
-so instead of listing down the libraries here, we can create a function to read the `requirements.txt` file and load the libraries dynamically.
-
-```python
-with open("requirements.txt") as f:
-    required_packages = f.read().splitlines()
-
-setup(
-    name="your_package_name",
-    version="0.1",
-    packages=find_packages(),
-    install_requires=required_packages,
-)
-```
+1. [Commit 1: Create a Setup Script](./Commit%201.md)
+2. [Commit 2: Automated Project Directory Creation ](./Commit%202.md)
+3. [Commit 3: Logging and Exception Handling](./Commit%203.md)
