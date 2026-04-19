@@ -28,7 +28,9 @@ def create_project_dir(project_name):
     "app.py",
     "Dockerfile",
     "requirements.txt",
-    "setup.py"
+    "setup.py",
+
+    "artifacts/__init__.py"
     ]
 
 
